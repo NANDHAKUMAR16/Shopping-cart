@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .item{
+    width: 200px;
+    height: 300px;
+}
+.container .item img{
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container .item p{
+    font-size: 16px
+}
+.container .item p::before{
+    content: "$";
+}
+.container button{
+    padding: 2px 10px;
+    outline: none;
+    font-size: 16px;
+}
+.btnRemove{
+    background-color: tomato;
+    color: white;
+    border: 0px;
+}
